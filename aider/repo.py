@@ -324,6 +324,9 @@ class GitRepo:
             return self.repo.git_dir
 
     def get_commit_message(self, diffs, context, user_language=None):
+        # Return a hardcoded commit message instead of generating one with a model
+        # Uncomment and modify the line below to hardcode your commit message.
+        return "Hardcoded commit message for all changes."
         diffs = "# Diffs:\n" + diffs
 
         content = ""
